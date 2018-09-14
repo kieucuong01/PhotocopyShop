@@ -6,11 +6,11 @@
 
 const options = {};
 
-options.ip = 'photocopyhongnhung.herokuapp.com';
-// options.port = process.env.PORT || 8000
+options.ip = process.env.HOST || '0.0.0.0';
+options.port = process.env.PORT || 8000
 options.config = { name: 'Total.js' };
 // options.sleep = 3000;
 
-//require('total.js').http('release', options);
-require('total.js').https('release', options);
+require('total.js').http('release', options);
+// require('total.js').https('release', options);
 // require('total.js').cluster.http(5, 'release', options);
