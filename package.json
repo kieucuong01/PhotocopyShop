@@ -3,6 +3,9 @@
   "description": "A simple and powerful Eshop solution written in Total.js / Node.js.",
   "version": "11.0.0",
   "main": "release.js",
+  "scripts": {
+  "start": "node release.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/totaljs/eshop"
