@@ -1,0 +1,20 @@
+// Common
+homepage          : @(Trang chủ)            --> /
+posts             : @(Blog)                --> @(/blog/)                 --> homepage
+post              : @(Post)                --> @(/blog/{0}/)             --> posts
+notices           : @(Thông báo)             --> @(/notices/)              --> homepage
+
+// Admin area
+admin             : @(Admin)               --> @(/admin/*)
+
+// Eshop
+checkout          : @(Checkout)            --> @(/checkout/)            --> homepage
+category          : @(Tất cả)        --> @(/categories/*)         --> homepage
+detail            : @(Chi tiết)      --> @(/detail/{0}/)          --> category
+top               : @(Sản phẩm hot)        --> @(/top/)                 --> homepage
+new               : @(Sản phẩm mới)        --> @(/new/)                 --> homepage
+popular           : @(Sản phẩm phổ biến)    --> @(/popular/)             --> homepage
+account           : @(Tài khoản của tôi)          --> @(/account/)             --> homepage
+order             : @(Chi tiết đơn hàng)        --> @(/checkout/{0}/)        --> account
+settings          : @(Cài đặt tài khoản)    --> @(/account/settings/)    --> account
+logoff            : @(Đăng xuất)              --> @(/logoff/)              --> homepage
