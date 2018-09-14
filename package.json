@@ -4,7 +4,8 @@
   "version": "11.0.0",
   "main": "release.js",
   "scripts": {
-  "start": "node release.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node release.js" 
   },
   "repository": {
     "type": "git",
@@ -13,9 +14,6 @@
   "dependencies": {
     "paypal-express-checkout": "latest",
     "total.js": "latest"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "eshop",
