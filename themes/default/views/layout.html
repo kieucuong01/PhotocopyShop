@@ -14,6 +14,25 @@
 	<script>var LOGGED = +'@{if user}1@{else}0@{fi}';</script>
 </head>
 <body data-jc="exec,binder,modificator">
+	<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="1649396448515665"
+  theme_color="#67b868"
+  logged_in_greeting="Chat với Admin Ticivi"
+  logged_out_greeting="Chat với Admin Ticivi">
+</div>
+
 	<br />
 	<div data-jc="loading" class="ui-loading@{if !repository.loading} hidden@{fi}"></div>
 	<div data-jc="shoppingcart" data-jc-path="shoppingcart" data-jc-config="discount:@{if user}@{user.discount}@{else}0@{fi}"></div>
